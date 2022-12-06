@@ -1,0 +1,40 @@
+.section2 {
+  width: 90%;
+  margin: auto;
+  .section2_title {
+    color: #564e4e;
+    font-size: 2rem;
+  }
+  .four_box_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    color: #564e4e;
+    box-sizing: border-box;
+    .each_box_container {
+        padding: 1rem;
+      box-shadow: 4px 2px 10px 2px rgba(247, 148, 137, 0.4);
+      border-radius: 10px;
+      .box_title {
+        color: #605b5b;
+        font-weight: bolder;
+      }
+      .img_container {
+        background-color: #faf5f2;
+        width: fit-content;
+        border-radius: 100%;
+        .img {
+          padding: 0.5rem 0.8rem;
+          width: 35px;
+        }
+      }
+      .box_text {
+        color: #706a6a;
+        width: 80%;
+      }
+      .more_info {
+        color: #f79489;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.section3 {
+  width: 90%;
+  margin: 5rem auto;
+}
+.section3 .content_image_container {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+.section3 .content_image_container .content_container {
+  flex: 1;
+}
+.section3 .content_image_container .image_container {
+  flex: 1;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.section3 .content_image_container .image_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.section3 .content_image_container .content_container {
+  overflow: scroll;
+}
+.section3 .content_image_container .content_container .icon {
+  color: #F79489;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.section3 .content_image_container .content_container .section3_title {
+  color: #564e4e;
+  font-size: 2rem;
+}
+.section3 .content_image_container .content_container .each_text_container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=section3.css.map */
