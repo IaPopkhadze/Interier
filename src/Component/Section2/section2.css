@@ -39,4 +39,20 @@
 }
 .section2 .four_box_container .each_box_container .more_info {
   color: #f79489;
+}
+
+@media screen and (max-width: 1000px) {
+  .section2 .four_box_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .section2 .four_box_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .section2 .four_box_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=section2.css.map */

@@ -24,7 +24,7 @@ function Section1() {
             <ul>
               <li>Furniture</li>
               <li>Shop</li>
-              <li>About Us</li>
+              <li>About</li>
               <li>Contact</li>
             </ul>
           </div>

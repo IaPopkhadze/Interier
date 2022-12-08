@@ -1,0 +1,93 @@
+.section6 {
+  width: 90%;
+  margin: 4rem auto;
+}
+.section6 .image_content_container {
+  display: flex;
+  gap: 1rem;
+}
+.section6 .image_content_container .image_container {
+  flex: 1;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.section6 .image_content_container .image_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.section6 .image_content_container .content {
+  flex: 1;
+  width: 80%;
+  margin: 0 auto;
+}
+.section6 .image_content_container .content .title {
+  margin-top: 0;
+  color: #564e4e;
+  font-size: 2rem;
+}
+.section6 .image_content_container .content .text {
+  color: #564e4e;
+  font-size: 0.9rem;
+}
+.section6 .image_content_container .content .search_container {
+  position: relative;
+  width: 400px;
+}
+.section6 .image_content_container .content .search_container .section6_input {
+  width: 400px;
+  height: 40px;
+  background: #fefcfb;
+  border: 1px solid #fadcd9;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 1rem;
+}
+.section6 .image_content_container .content .search_container .arrowContainer {
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.4rem;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+}
+.section6 .image_content_container .content .search_container .arrowContainer .arrow {
+  width: 100%;
+  height: 100%;
+}
+.section6 .image_content_container .content ::-moz-placeholder {
+  color: #f79489;
+}
+.section6 .image_content_container .content :-ms-input-placeholder {
+  color: #f79489;
+}
+.section6 .image_content_container .content ::placeholder {
+  color: #f79489;
+}
+
+@media screen and (max-width: 900px) {
+  .section6 .image_content_container .content .search_container {
+    width: 200px;
+  }
+  .section6 .image_content_container .content .search_container .arrowContainer {
+    width: 20px;
+    height: 20px;
+    top: 25%;
+    right: 0;
+  }
+  .section6 .image_content_container .content .search_container .section6_input {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section6 .image_content_container {
+    flex-direction: column;
+  }
+  .section6 .image_content_container .content {
+    width: 100%;
+  }
+}/*# sourceMappingURL=section6.css.map */

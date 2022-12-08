@@ -6,24 +6,43 @@ import "./section3.css";
 import { FiMinus } from "react-icons/fi";
 import { FiPlus } from "react-icons/fi";
 function Section3() {
-  const [iconId, setIconId] = useState(false);
-
+  const [data, setData] = useState(Section3Data);
+  const handleVisibility = (id) => {
+    const findElement = data.map((element) =>
+      element.id === id
+        ? { ...element, isSelected: !element.isSelected }
+        : element
+    );
+    setData(findElement);
+  };
   return (
     <div className="section3">
       <div className="content_image_container">
         <div className="content_container">
           <p className="section3_title">Visualize your ideas with us</p>
-          {Section3Data.map((element) => {
+          {data.map((element) => {
             return (
-              <div className="each_text_container">
-                <div>
+              <div key={element.id} className="each_text_container">
+                <div className="title_text">
                   <p>{element.title}</p>
+                  {element.isSelected ? (
+                    <p style={{ width: "80%" }}>{element.description}</p>
+                  ) : null}
                 </div>
-                {/* <FiMinus onClick={()=>setIconId(element.id)} className="icon"/>  */}
-                <FiPlus
-                  onClick={() => setIconId(element.id)}
-                  className="icon"
-                />
+                {element.isSelected ? (
+                  <div className="iconContainer">
+                    <FiMinus
+                      style={{ flex: "1", marginRight: "0" }}
+                      onClick={() => handleVisibility(element.id)}
+                      className="icon"
+                    />
+                  </div>
+                ) : (
+                  <FiPlus
+                    onClick={() => handleVisibility(element.id)}
+                    className="icon"
+                  />
+                )}
               </div>
             );
           })}

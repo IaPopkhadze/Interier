@@ -1,0 +1,78 @@
+.section5 {
+  background-color: #f6f6f6;
+  width: 100%;
+  margin: auto;
+  .section5_title {
+    color: #564e4e;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .opinion_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+    .each_person_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .title {
+        color: #564e4e;
+        font-size: 1.5rem;
+      }
+      .text {
+        color: #564e4e;
+      }
+      .name_image_profession {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .person_image_container {
+          width: 60px;
+          height: 60px;
+          border-radius: 100%;
+          overflow: hidden;
+          .person_image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .name_profession {
+          .name {
+            color: #564e4e;
+          }
+          .profession {
+            color: #564e4e;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and(max-width:800px) {
+  .section5 {
+    .section5_title{
+      font-size: 1.8rem;
+    }
+    .opinion_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media screen and(max-width:600px) {
+  .section5 {
+    .section5_title{
+      font-size: 1.5rem;
+    }
+    .opinion_container {
+      grid-template-columns: repeat(1, 1fr);
+      
+    }
+  }
+}
